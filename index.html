@@ -24,6 +24,7 @@
             a:active, a:hover { color: #4682B4; text-decoration: underline; }
             a:visited { color: #4682B4; text-decoration: none; }
             .img-bee { max-height: 25rem; }
+            #portrait { max-width: 50%; }
             .logo { height: 2.5rem; }
             .logo:hover { filter: opacity(50%); }
             .anchor-link {
@@ -46,10 +47,11 @@
                 text-decoration: none;
                 opacity: 1
             }
+            summary:hover { filter: opacity(50%); }
         </style>
     </head>
     <body>
-        <header class="m-3 row border-bottom pb-3">
+        <header class="m-1 row border-bottom border-dark border-1 p-1">
             <span class="col text-start" id="title" title="Beatrice the (Carpenter) Bee">
                 <img class="logo" src="static/images/icon.png" alt="Bee Logo" aria-hidden="true">
                 <a class="h2" href="https://www.seas.upenn.edu/~ericoc/bee/">Beatrice the <small>(Carpenter)</small> Bee</a>
@@ -59,9 +61,12 @@
             </span>
         </header>
         <main>
-            <div class="align-content-between" id="pictures">
-                <details class="border-bottom m-3 p-3" id="head" open>
-                    <summary class="p-3">
+            <div id="pictures">
+                <p class="text-center">
+                    <a href="static/images/portrait/portrait.png" target="_blank"><img alt="Portrait" class="rounded border border-3 border-dark" src="static/images/portrait/portrait_annotated.png" id="portrait"></a>
+                </p>
+                <details class="border-3 border-top border-dark border-bottom m-1 p-1" id="head" open>
+                    <summary class="p-1">
                         <span class="h3 text-start">
                             Head
                             <a class="anchor-link" href="#head" aria-label="Link to this section: Head (head)">
@@ -77,8 +82,8 @@
                         <a href="static/images/head/head_002_4K.png" target="_blank"><img alt="Head 002 (4K)" class="img-bee rounded border border-primary m-1" src="static/images/head/head_002_4K.png" id="head2"></a>
                     </p>
                 </details>
-                <details class="border-bottom m-3 p-3" id="forehead" open>
-                    <summary class="p-3">
+                <details class="border-bottom border-3 border-dark m-1 p-1" id="forehead" open>
+                    <summary class="p-1">
                         <span class="h3 text-start">
                             Forehead
                             <a class="anchor-link" href="#forehead" aria-label="Link to this section: Forehead (forehead)">
@@ -93,8 +98,23 @@
                         <a href="static/images/forehead/forehead_004.png" target="_blank"><img alt="Forehead 004" class="img-bee rounded border border-primary m-1" src="static/images/forehead/forehead_004.png" id="forehead4"></a>
                     </p>
                 </details>
-                <details class="border-bottom m-3 p-3" id="eye" open>
-                    <summary class="p-3">
+                <details class="border-bottom border-3 border-dark m-1 p-1" id="antenna" open>
+                    <summary class="p-1">
+                        <span class="h3 text-start">
+                            Antenna
+                            <a class="anchor-link" href="#antenna" aria-label="Link to this section: Antenna (antenna)">
+                                <i class="bi bi-link-45deg"></i>
+                            </a>
+                        </span>
+                    </summary>
+                    <p class="text-center">
+                        <a href="static/images/antenna/antenna_001.png" target="_blank"><img alt="Antenna 001" class="img-bee rounded border border-primary m-1" src="static/images/antenna/antenna_001.png" id="antenna1"></a>
+                        <a href="static/images/antenna/antenna_002.png" target="_blank"><img alt="Antenna 002" class="img-bee rounded border border-primary m-1" src="static/images/antenna/antenna_002.png" id="antenna2"></a>
+                        <a href="static/images/antenna/antenna_003.png" target="_blank"><img alt="Antenna 003" class="img-bee rounded border border-primary m-1" src="static/images/antenna/antenna_003.png" id="antenna3"></a>
+                    </p>
+                </details>
+                <details class="border-bottom border-3 border-dark m-1 p-1" id="eye" open>
+                    <summary class="p-1">
                         <span class="h3 text-start">
                             Eye
                             <a class="anchor-link" href="#eye" aria-label="Link to this section: Eye (eye)">
@@ -109,21 +129,8 @@
                         <a href="static/images/eye/eye_004.png" target="_blank"><img alt="Eye 004" class="img-bee rounded border border-primary m-1" src="static/images/eye/eye_004.png" id="eye4"></a>
                     </p>
                 </details>
-                <details class="border-bottom m-3 p-3" id="antenna" open>
-                    <summary class="p-3">
-                        <span class="h3 text-start">
-                            Antenna
-                            <a class="anchor-link" href="#antenna" aria-label="Link to this section: Antenna (antenna)">
-                                <i class="bi bi-link-45deg"></i>
-                            </a>
-                        </span>
-                    </summary>
-                    <p class="text-center">
-                        <i>Coming Soon...</i>
-                    </p>
-                </details>
-                <details class="border-bottom m-3 p-3" id="wing" open>
-                    <summary class="p-3">
+                <details class="border-bottom border-3 border-dark m-1 p-1" id="wing" open>
+                    <summary class="p-1">
                         <span class="h3 text-start">
                             Wing
                             <a class="anchor-link" href="#wing" aria-label="Link to this section: Wing (wing)">
@@ -132,11 +139,14 @@
                         </span>
                     </summary>
                     <p class="text-center">
-                        <i>Coming Soon...</i>
+                        <a href="static/images/wing/wing_001.png" target="_blank"><img alt="Wing 001" class="img-bee rounded border border-primary m-1" src="static/images/wing/wing_001.png" id="wing1"></a>
+                        <a href="static/images/wing/wing_002.png" target="_blank"><img alt="Wing 002" class="img-bee rounded border border-primary m-1" src="static/images/wing/wing_002.png" id="wing2"></a>
+                        <a href="static/images/wing/wing_003.png" target="_blank"><img alt="Wing 003" class="img-bee rounded border border-primary m-1" src="static/images/wing/wing_003.png" id="wing3"></a>
+                        <a href="static/images/wing/wing_004.png" target="_blank"><img alt="Wing 004" class="img-bee rounded border border-primary m-1" src="static/images/wing/wing_004.png" id="wing4"></a>
                     </p>
                 </details>
-                <details class="border-bottom m-3 p-3" id="knees" open>
-                    <summary class="p-3">
+                <details class="border-bottom border-3 border-dark m-1 p-1" id="knees" open>
+                    <summary class="p-1">
                         <span class="h3 text-start">
                             Knees
                             <a class="anchor-link" href="#knees" aria-label="Link to this section: Knees (knees)">
@@ -145,11 +155,12 @@
                         </span>
                     </summary>
                     <p class="text-center">
-                        <i>Coming Soon...</i>
+                        <a href="static/images/knees/knees.png" target="_blank"><img alt="Knees" class="img-bee rounded border border-primary m-1" src="static/images/knees/knees.png" id="knees1"></a>
+                        <a href="static/images/knees/knees_008.png" target="_blank"><img alt="Knees 008" class="img-bee rounded border border-primary m-1" src="static/images/knees/knees_008.png" id="knees8"></a>
                     </p>
                 </details>
-                <details class="border-bottom m-3 p-3" id="stinger" open>
-                    <summary class="p-3">
+                <details class="m-1 p-1" id="stinger" open>
+                    <summary class="p-1">
                         <span class="h3 text-start">
                             Stinger
                             <a class="anchor-link" href="#stinger" aria-label="Link to this section: Stinger (stinger)">
@@ -158,30 +169,28 @@
                         </span>
                     </summary>
                     <p class="text-center">
-                        <i>Coming Soon...</i>
-                    </p>
-                </details>
-                <details class="border-bottom m-3 p-3" id="portrait" open>
-                    <summary class="p-3">
-                        <span class="h3 text-start">
-                            Portrait
-                            <a class="anchor-link" href="#portrait" aria-label="Link to this section: Portrait (Portrait)">
-                                <i class="bi bi-link-45deg"></i>
-                            </a>
-                        </span>
-                    </summary>
-                    <p class="text-center">
-                        <i>Coming Soon...</i>
+                        <a href="static/images/stinger/stinger_001.png" target="_blank"><img alt="Stinger 001" class="img-bee rounded border border-primary m-1" src="static/images/stinger/stinger_001.png" id="stinger1"></a>
+                        <a href="static/images/stinger/stinger_002.png" target="_blank"><img alt="Stinger 002" class="img-bee rounded border border-primary m-1" src="static/images/stinger/stinger_002.png" id="stinger2"></a>
+                        <a href="static/images/stinger/stinger_003.png" target="_blank"><img alt="Stinger 003" class="img-bee rounded border border-primary m-1" src="static/images/stinger/stinger_003.png" id="stinger3"></a>
+                        <a href="static/images/stinger/stinger_004.png" target="_blank"><img alt="Stinger 004" class="img-bee rounded border border-primary m-1" src="static/images/stinger/stinger_004.png" id="stinger4"></a>
+                        <a href="static/images/stinger/stinger_005.png" target="_blank"><img alt="Stinger 005" class="img-bee rounded border border-primary m-1" src="static/images/stinger/stinger_005.png" id="stinger5"></a>
+                        <a href="static/images/stinger/stinger_006.png" target="_blank"><img alt="Stinger 006" class="img-bee rounded border border-primary m-1" src="static/images/stinger/stinger_006.png" id="stinger6"></a>
+                        <a href="static/images/stinger/stinger_007.png" target="_blank"><img alt="Stinger 007" class="img-bee rounded border border-primary m-1" src="static/images/stinger/stinger_007.png" id="stinger7"></a>
                     </p>
                 </details>
             </div>
         </main>
-        <footer class="m-3 py-3">
-            <p class="text-center" id="thanks">
-                Thank you to the <a class="fst-italic" href="https://www.nano.upenn.edu/resources/nanoscale-characterization/" target="_blank">Nanoscale Characterization Facility</a> (NCF)
-                at the <a class="fst-italic" href="https://www.nano.upenn.edu/" target="_blank">Krishna P. Singh Center for Nanotechnology</a>
-                at the <a class="fst-italic" href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a>!
-            </p>
+        <footer class="small m-1 p-3 border-top border-dark border-3 row">
+            <span class="text-start col" id="thanks">
+                <i class="bi bi-balloon-heart-fill text-danger"></i>
+                <span class="fw-bold">Thank you</span> to the <a class="fst-italic" href="https://www.nano.upenn.edu/resources/nanoscale-characterization/" target="_blank" title="Nanoscale Characterization Facility <https://www.nano.upenn.edu/resources/nanoscale-characterization/>">Nanoscale Characterization Facility</a>
+                (<span class="font-monospace">N.C.F.</span>)
+                at the <a class="fst-italic" href="https://www.nano.upenn.edu/" target="_blank" title="Singh Center for Nanotechnology <https://www.nano.upenn.edu/>">Singh Center for Nanotechnology</a>!
+            </span>
+            <span class="text-end col" id="source" title="View Source: <https://github.com/upenn/beatrice-bee-ericoc>">
+                <i class="bi bi-code-slash"></i>
+                <a class="font-monospace" href="https://github.com/upenn/beatrice-bee-ericoc" title="View source of this page <https://github.com/upenn/beatrice-bee-ericoc>">https://github.com/upenn/beatrice-bee-ericoc</a>
+            </span>
         </footer>
     </body>
 </html>
