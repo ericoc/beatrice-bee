@@ -1,6 +1,8 @@
-*.png
-*.tif
 .DS_Store
 *~
 .vcs
 .idea
+static/jquery*
+static/bootstrap*
+static/images/head
+static/images/forehead
