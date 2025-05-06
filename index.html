@@ -26,6 +26,26 @@
             .img-bee { max-height: 25rem; }
             .logo { height: 2.5rem; }
             .logo:hover { filter: opacity(50%); }
+            .anchor-link {
+                padding: 0 .175rem;
+                font-weight: 400;
+                color: #4682B4;
+                text-decoration: none;
+                opacity: 0;
+                transition: color 0.15s ease-in-out,opacity 0.15s ease-in-out;
+            }
+            :target>.anchor-link {
+                border-color: #0096FF;
+                border-radius: 0.5rem;
+                border-style: solid;
+                border-width: 0.15rem;
+            }
+            .anchor-link::after { color: #4682B4; }
+            .anchor-link:focus, .anchor-link:hover, :hover>.anchor-link, :target>.anchor-link {
+                color: #0d6efd;
+                text-decoration: none;
+                opacity: 1
+            }
         </style>
     </head>
     <body>
@@ -42,7 +62,12 @@
             <div class="align-content-between" id="pictures">
                 <details class="border-bottom m-3 p-3" id="head" open>
                     <summary class="p-3">
-                        <span class="h3 text-start">Head</span>
+                        <span class="h3 text-start">
+                            Head
+                            <a class="anchor-link" href="#head" aria-label="Link to this section: Head (head)">
+                                <i class="bi bi-link-45deg"></i>
+                            </a>
+                        </span>
                     </summary>
                     <p class="text-center">
                         <a href="static/images/head/head_001.png" target="_blank"><img alt="Head 001" class="img-bee rounded border border-primary m-1" src="static/images/head/head_001.png" id="head1"></a>
@@ -54,7 +79,12 @@
                 </details>
                 <details class="border-bottom m-3 p-3" id="forehead" open>
                     <summary class="p-3">
-                        <span class="h3 text-start">Forehead</span>
+                        <span class="h3 text-start">
+                            Forehead
+                            <a class="anchor-link" href="#forehead" aria-label="Link to this section: Forehead (forehead)">
+                                <i class="bi bi-link-45deg"></i>
+                            </a>
+                        </span>
                     </summary>
                     <p class="text-center">
                         <a href="static/images/forehead/forehead_001.png" target="_blank"><img alt="Forehead 001" class="img-bee rounded border border-primary m-1" src="static/images/forehead/forehead_001.png" id="forehead1"></a>
@@ -63,9 +93,14 @@
                         <a href="static/images/forehead/forehead_004.png" target="_blank"><img alt="Forehead 004" class="img-bee rounded border border-primary m-1" src="static/images/forehead/forehead_004.png" id="forehead4"></a>
                     </p>
                 </details>
-                <details class="border-bottom m-3 p-3" id="Eye" open>
+                <details class="border-bottom m-3 p-3" id="eye" open>
                     <summary class="p-3">
-                        <span class="h3 text-start">Eye</span>
+                        <span class="h3 text-start">
+                            Eye
+                            <a class="anchor-link" href="#eye" aria-label="Link to this section: Eye (eye)">
+                                <i class="bi bi-link-45deg"></i>
+                            </a>
+                        </span>
                     </summary>
                     <p class="text-center">
                         <i>Coming Soon...</i>
@@ -73,7 +108,12 @@
                 </details>
                 <details class="border-bottom m-3 p-3" id="antenna" open>
                     <summary class="p-3">
-                        <span class="h3 text-start">Antenna</span>
+                        <span class="h3 text-start">
+                            Antenna
+                            <a class="anchor-link" href="#antenna" aria-label="Link to this section: Antenna (antenna)">
+                                <i class="bi bi-link-45deg"></i>
+                            </a>
+                        </span>
                     </summary>
                     <p class="text-center">
                         <i>Coming Soon...</i>
@@ -81,7 +121,12 @@
                 </details>
                 <details class="border-bottom m-3 p-3" id="wing" open>
                     <summary class="p-3">
-                        <span class="h3 text-start">Wing</span>
+                        <span class="h3 text-start">
+                            Wing
+                            <a class="anchor-link" href="#wing" aria-label="Link to this section: Wing (wing)">
+                                <i class="bi bi-link-45deg"></i>
+                            </a>
+                        </span>
                     </summary>
                     <p class="text-center">
                         <i>Coming Soon...</i>
@@ -89,7 +134,12 @@
                 </details>
                 <details class="border-bottom m-3 p-3" id="knees" open>
                     <summary class="p-3">
-                        <span class="h3 text-start">Knees</span>
+                        <span class="h3 text-start">
+                            Knees
+                            <a class="anchor-link" href="#knees" aria-label="Link to this section: Knees (knees)">
+                                <i class="bi bi-link-45deg"></i>
+                            </a>
+                        </span>
                     </summary>
                     <p class="text-center">
                         <i>Coming Soon...</i>
@@ -97,7 +147,12 @@
                 </details>
                 <details class="border-bottom m-3 p-3" id="stinger" open>
                     <summary class="p-3">
-                        <span class="h3 text-start">Stinger</span>
+                        <span class="h3 text-start">
+                            Stinger
+                            <a class="anchor-link" href="#stinger" aria-label="Link to this section: Stinger (stinger)">
+                                <i class="bi bi-link-45deg"></i>
+                            </a>
+                        </span>
                     </summary>
                     <p class="text-center">
                         <i>Coming Soon...</i>
@@ -105,7 +160,12 @@
                 </details>
                 <details class="border-bottom m-3 p-3" id="portrait" open>
                     <summary class="p-3">
-                        <span class="h3 text-start">Portrait</span>
+                        <span class="h3 text-start">
+                            Portrait
+                            <a class="anchor-link" href="#portrait" aria-label="Link to this section: Portrait (Portrait)">
+                                <i class="bi bi-link-45deg"></i>
+                            </a>
+                        </span>
                     </summary>
                     <p class="text-center">
                         <i>Coming Soon...</i>
