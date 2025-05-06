@@ -1,0 +1,6 @@
+*.png
+*.tif
+.DS_Store
+*~
+.vcs
+.idea
