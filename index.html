@@ -23,10 +23,10 @@
             a:link, header a:hover, header a:active { color: #0096FF; text-decoration: none; }
             a:active, a:hover { color: #4682B4; text-decoration: underline; }
             a:visited { color: #4682B4; text-decoration: none; }
-            .img-bee { width: 25%; }
-            #portrait-img { width: 50%; }
-            .logo { height: 2.5rem; }
-            .logo:hover { filter: opacity(50%); }
+            .img-bee { width: 25%; border-radius: 1rem; border-width: 0.025rem; border-style: solid; border-color: var(--bs-secondary); }
+            #portrait-img { width: 50%; border-radius: 1rem; border-width: 0.15rem; border-style: solid; border-color: var(--bs-secondary); }
+            .logo { height: 2.5rem; filter: invert(50%); }
+            .logo:hover { filter: invert(100%); }
             .anchor-link {
                 padding: 0 .175rem;
                 font-weight: 400;
@@ -57,17 +57,17 @@
         </style>
     </head>
     <body>
-        <header class="m-1 row p-1">
+        <header class="container-fluid row">
             <span class="col text-start" title="Beatrice the (Carpenter) Bee">
-                <img class="logo" src="static/images/icon.png" alt="Bee Logo" aria-hidden="true">
+                <img class="logo navbar-brand" src="static/images/icon.png" alt="Bee Logo" aria-hidden="true">
                 <a class="h2" href="https://www.seas.upenn.edu/~ericoc/bee/#title" id="title">Beatrice the Bee</a>
             </span>
             <span class="col h4 text-end">
                 <a id="microscope" href="https://www.nano.upenn.edu/equipment/quanta-600-feg-esem/" target="_blank">Quanta 600 FEG ESEM</a>
             </span>
         </header>
-        <main>
-            <nav class="m-1 p-1 simple-list-example-scrollspy" id="nav">
+        <main class="container-fluid">
+            <nav class="m-1 p-1 navbar simple-list-example-scrollspy" id="nav">
                 <ul class="nav nav-tabs border-dark border-top border-bottom border-3" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link" href="#head">Head</a>
@@ -94,7 +94,7 @@
             </nav>
             <div id="pictures" data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
                 <p class="text-center">
-                    <a href="static/images/portrait/portrait.png" id="portrait" target="_blank"><img alt="Portrait" class="rounded border border-3 border-dark" id="portrait-img" src="static/images/portrait/portrait_annotated.png"></a>
+                    <a href="static/images/portrait/portrait.png" id="portrait" target="_blank"><img alt="Portrait" id="portrait-img" src="static/images/portrait/portrait_annotated.png"></a>
                 </p>
                 <p class="lead text-center fst-italic p-1">
                     Beatrice was a female carpenter bee, that was caught in North Philadelphia in May 2025.
@@ -217,9 +217,9 @@
                 <i class="bi bi-arrow-up-circle-fill"></i>
             </button>
         </main>
-        <footer class="small m-1 p-3 border-top border-dark border-3 row">
+        <footer class="container-fluid border-top border-dark border-3 row">
             <span class="text-start col" id="thanks">
-                <i class="bi bi-balloon-heart-fill text-danger"></i>
+                <i class="bi bi-balloon-heart h4 text-danger"></i>
                 <span class="fw-bold">Thank you</span> to the <a class="fst-italic" href="https://www.nano.upenn.edu/resources/nanoscale-characterization/" target="_blank" title="Nanoscale Characterization Facility <https://www.nano.upenn.edu/resources/nanoscale-characterization/>">Nanoscale Characterization Facility</a>
                 (<span class="font-monospace">N.C.F.</span>)
                 at the <a class="fst-italic" href="https://www.nano.upenn.edu/" target="_blank" title="Singh Center for Nanotechnology <https://www.nano.upenn.edu/>">Singh Center for Nanotechnology</a>!
