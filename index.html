@@ -31,22 +31,8 @@
             .anchor-link {
                 padding: 0 .175rem;
                 font-weight: 400;
-                color: #4682B4;
+                color: #0096FF;
                 text-decoration: none;
-                opacity: 0;
-                transition: color 0.15s ease-in-out,opacity 0.15s ease-in-out;
-            }
-            :target>.anchor-link {
-                border-color: #0096FF;
-                border-radius: 0.5rem;
-                border-style: solid;
-                border-width: 0.15rem;
-            }
-            .anchor-link::after { color: #4682B4; }
-            .anchor-link:focus, .anchor-link:hover, :hover>.anchor-link, :target>.anchor-link {
-                color: #0d6efd;
-                text-decoration: none;
-                opacity: 1;
             }
             #btn-back-to-top {
                 position: fixed;
@@ -68,8 +54,8 @@
                 <a id="microscope" href="https://www.nano.upenn.edu/equipment/quanta-600-feg-esem/" target="_blank">Quanta 600 FEG ESEM</a>
             </span>
         </header>
-        <main class="container-fluid">
-            <nav class="m-1 p-1 navbar border-top border-bottom border-warning" id="nav">
+        <main class="container-fluid border-top border-warning">
+            <nav class="m-1 p-1 navbar" id="nav">
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#head">Head</a>
