@@ -47,6 +47,12 @@
                 text-decoration: none;
                 opacity: 1;
             }
+            #btn-back-to-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                display: none;
+            }
             summary:hover { filter: opacity(50%); }
         </style>
     </head>
@@ -207,6 +213,9 @@
                     </p>
                 </details>
             </div>
+            <button type="button" class="btn btn-light btn-floating btn-lg" id="btn-back-to-top">
+                <i class="bi bi-arrow-up-circle-fill"></i>
+            </button>
         </main>
         <footer class="small m-1 p-3 border-top border-dark border-3 row">
             <span class="text-start col" id="thanks">
@@ -220,5 +229,31 @@
                 <a class="font-monospace" href="https://github.com/upenn/beatrice-bee-ericoc" title="View source of this page <https://github.com/upenn/beatrice-bee-ericoc>">https://github.com/upenn/beatrice-bee-ericoc</a>
             </span>
         </footer>
+        <script>
+            let mybutton = document.getElementById("btn-back-to-top");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                ) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            mybutton.addEventListener("click", backToTop);
+
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
     </body>
 </html>
