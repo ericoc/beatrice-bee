@@ -1,6 +1,6 @@
 # _Beatrice_ the (Carpenter) Bee
 
-_Beatrice_ is a female carpenter bee, that was caught in North Philadelphia.
+_Beatrice_ was a female carpenter bee caught in North Philadelphia in May 2025.
 
 This source code makes up a website hosted at https://www.seas.upenn.edu/~ericoc/bee/
 

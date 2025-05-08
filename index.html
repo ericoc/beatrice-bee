@@ -2,27 +2,30 @@
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Microscope images of a carpenter bee from the Quanta 600 FEG Environmental Scanning Electron Microscope at the Nanoscale Characterization Facility at the Krishna P. Singh Center for Nanotechnology at the University of Pennsylvania.">
+        <meta name="description" content="Microscope images of a carpenter bee from the Quanta 600 FEG Environmental Scanning Electron Microscope (ESEM) at the Nanoscale Characterization Facility at the Krishna P. Singh Center for Nanotechnology at the University of Pennsylvania.">
         <meta name="keywords" content="bee, carpenter bee, Quanta 600 FEG Environmental Scanning Electron Microscope, quanta, esem, sem, scanning microscope, electron microscope, scanning electron microscope, singh, upenn, penn">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Beatrice the Bee">
-        <meta property="og:title" content="Beatrice the (Carpenter) Bee @ Quanta 600 FEG Environmental Scanning Electron Microscope">
-        <meta property="og:description" content="Microscope images of a carpenter bee from the Quanta 600 FEG Environmental Scanning Electron Microscope at the Nanoscale Characterization Facility at the Krishna P. Singh Center for Nanotechnology at the University of Pennsylvania.">
+        <meta property="og:site_name" content="Beatrice the Bee 🐝">
+        <meta property="og:title" content="Beatrice the (Carpenter) Bee 🐝 Quanta 600 FEG ESEM">
+        <meta property="og:description" content="Microscope images of a carpenter bee from the Quanta 600 FEG Environmental Scanning Electron Microscope (ESEM) at the Nanoscale Characterization Facility at the Krishna P. Singh Center for Nanotechnology at the University of Pennsylvania.">
         <meta property="og:url" content="https://www.seas.upenn.edu/~ericoc/bee/">
         <meta property="og:image" content="https://www.seas.upenn.edu/~ericoc/bee/static/images/icon.png">
         <link rel="shortcut icon" href="https://www.seas.upenn.edu/~ericoc/bee/static/images/favicon.ico">
         <link rel="apple-touch-icon" href="https://www.seas.upenn.edu/~ericoc/bee/static/images/icon.png">
-        <title>Beatrice the (Carpenter) Bee @ Quanta 600 FEG ESEM</title>
+        <title>Beatrice the Bee 🐝 Quanta 600 FEG ESEM</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="static/bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="static/bootstrap-icons-1.12.1/bootstrap-icons.min.css">
+        <link href="static/lightbox2-2.11.5/dist/css/lightbox.css" rel="stylesheet">
+        <script src="static/jquery-3.7.1.min.js"></script>
         <script src="static/bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="static/lightbox2-2.11.5/dist/js/lightbox.js"></script>
         <style>
             body { background-color: #323639; color: #d6d6d7; }
             a, a:link, a:visited, .nav-item a, .nav-item a:link, .nav-item a:visited { color: #0096FF; text-decoration: none; }
             a:active, a:hover, .nav-item a:hover { text-decoration: underline; }
-            .icon-link-hover { --bs-icon-link-transform: translate3d(0, -.3rem, 0); }
+            /* .icon-link-hover { --bs-icon-link-transform: translate3d(0, -.3rem, 0); } */
             .img-bee { width: 25%; border-radius: 1rem; border-width: 0.025rem; border-style: solid; border-color: var(--bs-warning); }
             #portrait-img { width: 50%; border-radius: 1rem; border-width: 0.15rem; border-style: solid; border-color: var(--bs-warning); }
             .logo { height: 2.5rem; }
@@ -44,11 +47,12 @@
     </head>
     <body>
         <header class="container-fluid p-3 row">
-            <span class="col text-start" title="Beatrice the (Carpenter) Bee">
+            <span class="col text-start" title="Beatrice the (Carpenter) Bee 🐝">
                 <img class="logo navbar-brand" src="static/images/icon.png" alt="Bee Logo" aria-hidden="true">
                 <a class="h2" href="https://www.seas.upenn.edu/~ericoc/bee/#title" id="title">
                     Beatrice the Bee
                 </a>
+                🐝
             </span>
             <span class="col h4 text-end">
                 <a id="microscope" href="https://www.nano.upenn.edu/equipment/quanta-600-feg-esem/" target="_blank">Quanta 600 FEG ESEM</a>
@@ -82,122 +86,124 @@
             </nav>
             <div id="pictures">
                 <p class="text-center p-3">
-                    <a href="static/images/portrait/portrait.png" id="portrait" target="_blank"><img alt="Portrait" id="portrait-img" src="static/images/portrait/portrait_annotated.png"></a>
+                    <a href="static/images/portrait/portrait_annotated.png" id="portrait" data-lightbox="portrait" title="Portrait">
+                        <img src="static/images/portrait/portrait_annotated.png" alt="Portrait" id="portrait-img">
+                    </a>
                 </p>
-                <p class="lead text-center fst-italic p-1">
-                    Beatrice was a female carpenter bee caught in North Philadelphia in May 2025.
+                <p class="lead text-center p-1">
+                    <i>Beatrice</i> 🐝 was a female carpenter bee caught in North Philadelphia in May 2025.
                 </p>
                 <details class="border-3 border-top border-warning border-bottom m-1 p-1" open>
                     <summary class="p-1" id="head">
                         <span class="h3 text-start">
-                            Head
+                            Head (5)
                             <a class="anchor-link" href="#head" aria-label="Link to this section: Head (head)">
                                 <i class="bi bi-link-45deg"></i>
                             </a>
                         </span>
                     </summary>
                     <p class="text-center">
-                        <a href="static/images/head/head_001.png" id="head1" target="_blank"><img alt="Head 001" class="img-bee m-1" src="static/images/head/head_001.png"></a>
-                        <a href="static/images/head/head_003.png" id="head3" target="_blank"><img alt="Head 003" class="img-bee m-1" src="static/images/head/head_003.png"></a>
-                        <a href="static/images/head/head_004.png" id="head4" target="_blank"><img alt="Head 004" class="img-bee m-1" src="static/images/head/head_004.png"></a>
-                        <a href="static/images/head/head_005.png" id="head5" target="_blank"><img alt="Head 005" class="img-bee m-1" src="static/images/head/head_005.png"></a>
-                        <a href="static/images/head/head_002_4K.png" id="head2" target="_blank"><img alt="Head 002 (4K)" class="img-bee m-1" src="static/images/head/head_002_4K.png"></a>
+                        <a href="static/images/head/head_001.png" id="head1" data-lightbox="head" target="_blank"><img alt="Head 001" class="img-bee m-1" src="static/images/head/head_001.png"></a>
+                        <a href="static/images/head/head_003.png" id="head3" data-lightbox="head" target="_blank"><img alt="Head 003" class="img-bee m-1" src="static/images/head/head_003.png"></a>
+                        <a href="static/images/head/head_004.png" id="head4" data-lightbox="head" target="_blank"><img alt="Head 004" class="img-bee m-1" src="static/images/head/head_004.png"></a>
+                        <a href="static/images/head/head_005.png" id="head5" data-lightbox="head" target="_blank"><img alt="Head 005" class="img-bee m-1" src="static/images/head/head_005.png"></a>
+                        <a href="static/images/head/head_002_4K.png" id="head2" data-lightbox="head" target="_blank"><img alt="Head 002 (4K)" class="img-bee m-1" src="static/images/head/head_002_4K.png"></a>
                     </p>
                 </details>
                 <details class="border-bottom border-3 border-warning m-1 p-1" open>
                     <summary class="p-1" id="forehead">
                         <span class="h3 text-start">
-                            Forehead
+                            Forehead (4)
                             <a class="anchor-link" href="#forehead" aria-label="Link to this section: Forehead (forehead)">
                                 <i class="bi bi-link-45deg"></i>
                             </a>
                         </span>
                     </summary>
                     <p class="text-center">
-                        <a href="static/images/forehead/forehead_001.png" id="forehead1" target="_blank"><img alt="Forehead 001" class="img-bee m-1" src="static/images/forehead/forehead_001.png"></a>
-                        <a href="static/images/forehead/forehead_002.png" id="forehead2" target="_blank"><img alt="Forehead 002" class="img-bee m-1" src="static/images/forehead/forehead_002.png"></a>
-                        <a href="static/images/forehead/forehead_003.png" id="forehead3" target="_blank"><img alt="Forehead 003" class="img-bee m-1" src="static/images/forehead/forehead_003.png"></a>
-                        <a href="static/images/forehead/forehead_004.png" id="forehead4" target="_blank"><img alt="Forehead 004" class="img-bee m-1" src="static/images/forehead/forehead_004.png"></a>
+                        <a href="static/images/forehead/forehead_001.png" id="forehead1" data-lightbox="forehead" target="_blank"><img alt="Forehead 001" class="img-bee m-1" src="static/images/forehead/forehead_001.png"></a>
+                        <a href="static/images/forehead/forehead_002.png" id="forehead2" data-lightbox="forehead" target="_blank"><img alt="Forehead 002" class="img-bee m-1" src="static/images/forehead/forehead_002.png"></a>
+                        <a href="static/images/forehead/forehead_003.png" id="forehead3" data-lightbox="forehead" target="_blank"><img alt="Forehead 003" class="img-bee m-1" src="static/images/forehead/forehead_003.png"></a>
+                        <a href="static/images/forehead/forehead_004.png" id="forehead4" data-lightbox="forehead" target="_blank"><img alt="Forehead 004" class="img-bee m-1" src="static/images/forehead/forehead_004.png"></a>
                     </p>
                 </details>
                 <details class="border-bottom border-3 border-warning m-1 p-1" open>
                     <summary class="p-1" id="antenna">
                         <span class="h3 text-start">
-                            Antenna
+                            Antenna (3)
                             <a class="anchor-link" href="#antenna" aria-label="Link to this section: Antenna (antenna)">
                                 <i class="bi bi-link-45deg"></i>
                             </a>
                         </span>
                     </summary>
                     <p class="text-center">
-                        <a href="static/images/antenna/antenna_001.png" id="antenna1" target="_blank"><img alt="Antenna 001" class="img-bee m-1" src="static/images/antenna/antenna_001.png"></a>
-                        <a href="static/images/antenna/antenna_002.png" id="antenna2" target="_blank"><img alt="Antenna 002" class="img-bee m-1" src="static/images/antenna/antenna_002.png"></a>
-                        <a href="static/images/antenna/antenna_003.png" id="antenna3" target="_blank"><img alt="Antenna 003" class="img-bee m-1" src="static/images/antenna/antenna_003.png"></a>
+                        <a href="static/images/antenna/antenna_001.png" id="antenna1" data-lightbox="antenna" target="_blank"><img alt="Antenna 001" class="img-bee m-1" src="static/images/antenna/antenna_001.png"></a>
+                        <a href="static/images/antenna/antenna_002.png" id="antenna2" data-lightbox="antenna" target="_blank"><img alt="Antenna 002" class="img-bee m-1" src="static/images/antenna/antenna_002.png"></a>
+                        <a href="static/images/antenna/antenna_003.png" id="antenna3" data-lightbox="antenna" target="_blank"><img alt="Antenna 003" class="img-bee m-1" src="static/images/antenna/antenna_003.png"></a>
                     </p>
                 </details>
                 <details class="border-bottom border-3 border-warning m-1 p-1" open>
                     <summary class="p-1" id="eye">
                         <span class="h3 text-start">
-                            Eye
+                            Eye (4)
                             <a class="anchor-link" href="#eye" aria-label="Link to this section: Eye (eye)">
                                 <i class="bi bi-link-45deg"></i>
                             </a>
                         </span>
                     </summary>
                     <p class="text-center">
-                        <a href="static/images/eye/eye_001.png" id="eye1" target="_blank"><img alt="Eye 001" class="img-bee m-1" src="static/images/eye/eye_001.png"></a>
-                        <a href="static/images/eye/eye_002.png" id="eye2" target="_blank"><img alt="Eye 002" class="img-bee m-1" src="static/images/eye/eye_002.png"></a>
-                        <a href="static/images/eye/eye_003.png" id="eye3" target="_blank"><img alt="Eye 003" class="img-bee m-1" src="static/images/eye/eye_003.png"></a>
-                        <a href="static/images/eye/eye_004.png" id="eye4" target="_blank"><img alt="Eye 004" class="img-bee m-1" src="static/images/eye/eye_004.png"></a>
+                        <a href="static/images/eye/eye_001.png" id="eye1" data-lightbox="eye" target="_blank"><img alt="Eye 001" class="img-bee m-1" src="static/images/eye/eye_001.png"></a>
+                        <a href="static/images/eye/eye_002.png" id="eye2" data-lightbox="eye" target="_blank"><img alt="Eye 002" class="img-bee m-1" src="static/images/eye/eye_002.png"></a>
+                        <a href="static/images/eye/eye_003.png" id="eye3" data-lightbox="eye" target="_blank"><img alt="Eye 003" class="img-bee m-1" src="static/images/eye/eye_003.png"></a>
+                        <a href="static/images/eye/eye_004.png" id="eye4" data-lightbox="eye" target="_blank"><img alt="Eye 004" class="img-bee m-1" src="static/images/eye/eye_004.png"></a>
                     </p>
                 </details>
                 <details class="border-bottom border-3 border-warning m-1 p-1" open>
                     <summary class="p-1" id="wing">
                         <span class="h3 text-start">
-                            Wing
+                            Wing (4)
                             <a class="anchor-link" href="#wing" aria-label="Link to this section: Wing (wing)">
                                 <i class="bi bi-link-45deg"></i>
                             </a>
                         </span>
                     </summary>
                     <p class="text-center">
-                        <a href="static/images/wing/wing_001.png" id="wing1" target="_blank"><img alt="Wing 001" class="img-bee m-1" src="static/images/wing/wing_001.png"></a>
-                        <a href="static/images/wing/wing_002.png" id="wing2" target="_blank"><img alt="Wing 002" class="img-bee m-1" src="static/images/wing/wing_002.png"></a>
-                        <a href="static/images/wing/wing_003.png" id="wing3" target="_blank"><img alt="Wing 003" class="img-bee m-1" src="static/images/wing/wing_003.png"></a>
-                        <a href="static/images/wing/wing_004.png" id="wing4" target="_blank"><img alt="Wing 004" class="img-bee m-1" src="static/images/wing/wing_004.png"></a>
+                        <a href="static/images/wing/wing_001.png" id="wing1" data-lightbox="wing" target="_blank"><img alt="Wing 001" class="img-bee m-1" src="static/images/wing/wing_001.png"></a>
+                        <a href="static/images/wing/wing_002.png" id="wing2" data-lightbox="wing" target="_blank"><img alt="Wing 002" class="img-bee m-1" src="static/images/wing/wing_002.png"></a>
+                        <a href="static/images/wing/wing_003.png" id="wing3" data-lightbox="wing" target="_blank"><img alt="Wing 003" class="img-bee m-1" src="static/images/wing/wing_003.png"></a>
+                        <a href="static/images/wing/wing_004.png" id="wing4" data-lightbox="wing" target="_blank"><img alt="Wing 004" class="img-bee m-1" src="static/images/wing/wing_004.png"></a>
                     </p>
                 </details>
                 <details class="border-bottom border-3 border-warning m-1 p-1" open>
                     <summary class="p-1" id="knees">
                         <span class="h3 text-start">
-                            Knees
+                            Knees (2)
                             <a class="anchor-link" href="#knees" aria-label="Link to this section: Knees (knees)">
                                 <i class="bi bi-link-45deg"></i>
                             </a>
                         </span>
                     </summary>
                     <p class="text-center">
-                        <a href="static/images/knees/knees.png" id="knees1" target="_blank"><img alt="Knees" class="img-bee m-1" src="static/images/knees/knees.png"></a>
-                        <a href="static/images/knees/knees_008.png" id="knees8" target="_blank"><img alt="Knees 008" class="img-bee m-1" src="static/images/knees/knees_008.png"></a>
+                        <a href="static/images/knees/knees.png" id="knees1" data-lightbox="knees" target="_blank"><img alt="Knees" class="img-bee m-1" src="static/images/knees/knees.png"></a>
+                        <a href="static/images/knees/knees_008.png" id="knees8" data-lightbox="knees" target="_blank"><img alt="Knees 008" class="img-bee m-1" src="static/images/knees/knees_008.png"></a>
                     </p>
                 </details>
                 <details class="m-1 p-1" open>
                     <summary class="p-1">
                         <span class="h3 text-start">
-                            Stinger
+                            Stinger (7)
                             <a id="stinger" class="anchor-link" href="#stinger" aria-label="Link to this section: Stinger (stinger)">
                                 <i class="bi bi-link-45deg"></i>
                             </a>
                         </span>
                     </summary>
                     <p class="text-center">
-                        <a href="static/images/stinger/stinger_001.png" id="stinger1" target="_blank"><img alt="Stinger 001" class="img-bee m-1" src="static/images/stinger/stinger_001.png"></a>
-                        <a href="static/images/stinger/stinger_002.png" id="stinger2" target="_blank"><img alt="Stinger 002" class="img-bee m-1" src="static/images/stinger/stinger_002.png"></a>
-                        <a href="static/images/stinger/stinger_003.png" id="stinger3" target="_blank"><img alt="Stinger 003" class="img-bee m-1" src="static/images/stinger/stinger_003.png"></a>
-                        <a href="static/images/stinger/stinger_004.png" id="stinger4" target="_blank"><img alt="Stinger 004" class="img-bee m-1" src="static/images/stinger/stinger_004.png"></a>
-                        <a href="static/images/stinger/stinger_005.png" id="stinger5" target="_blank"><img alt="Stinger 005" class="img-bee m-1" src="static/images/stinger/stinger_005.png"></a>
-                        <a href="static/images/stinger/stinger_006.png" id="stinger6" target="_blank"><img alt="Stinger 006" class="img-bee m-1" src="static/images/stinger/stinger_006.png"></a>
-                        <a href="static/images/stinger/stinger_007.png" id="stinger7" target="_blank"><img alt="Stinger 007" class="img-bee m-1" src="static/images/stinger/stinger_007.png"></a>
+                        <a href="static/images/stinger/stinger_001.png" id="stinger1" data-lightbox="stinger" target="_blank"><img alt="Stinger 001" class="img-bee m-1" src="static/images/stinger/stinger_001.png"></a>
+                        <a href="static/images/stinger/stinger_002.png" id="stinger2" data-lightbox="stinger" target="_blank"><img alt="Stinger 002" class="img-bee m-1" src="static/images/stinger/stinger_002.png"></a>
+                        <a href="static/images/stinger/stinger_003.png" id="stinger3" data-lightbox="stinger" target="_blank"><img alt="Stinger 003" class="img-bee m-1" src="static/images/stinger/stinger_003.png"></a>
+                        <a href="static/images/stinger/stinger_004.png" id="stinger4" data-lightbox="stinger" target="_blank"><img alt="Stinger 004" class="img-bee m-1" src="static/images/stinger/stinger_004.png"></a>
+                        <a href="static/images/stinger/stinger_005.png" id="stinger5" data-lightbox="stinger" target="_blank"><img alt="Stinger 005" class="img-bee m-1" src="static/images/stinger/stinger_005.png"></a>
+                        <a href="static/images/stinger/stinger_006.png" id="stinger6" data-lightbox="stinger" target="_blank"><img alt="Stinger 006" class="img-bee m-1" src="static/images/stinger/stinger_006.png"></a>
+                        <a href="static/images/stinger/stinger_007.png" id="stinger7" data-lightbox="stinger" target="_blank"><img alt="Stinger 007" class="img-bee m-1" src="static/images/stinger/stinger_007.png"></a>
                     </p>
                 </details>
             </div>
