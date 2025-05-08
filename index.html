@@ -2,18 +2,18 @@
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Microscope images of a carpenter bee from the Quanta 600 FEG Environmental Scanning Electron Microscope (ESEM) at the Nanoscale Characterization Facility at the Krishna P. Singh Center for Nanotechnology at the University of Pennsylvania.">
-        <meta name="keywords" content="bee, carpenter bee, Quanta 600 FEG Environmental Scanning Electron Microscope, quanta, esem, sem, scanning microscope, electron microscope, scanning electron microscope, singh, upenn, penn">
+        <meta name="description" content="Microscope images of a carpenter bee from the Quanta 600 Field Emission Gun (FEG) Environmental Scanning Electron Microscope (ESEM) at the Nanoscale Characterization Facility at the Krishna P. Singh Center for Nanotechnology at the University of Pennsylvania.">
+        <meta name="keywords" content="bee, carpenter bee, Quanta 600 Field Emission Gun Environmental Scanning Electron Microscope, quanta, feg esem, esem, sem, scanning microscope, electron microscope, scanning electron microscope, singh, upenn, penn">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Beatrice the Bee 🐝">
-        <meta property="og:title" content="Beatrice the (Carpenter) Bee 🐝 Quanta 600 FEG ESEM">
-        <meta property="og:description" content="Microscope images of a carpenter bee from the Quanta 600 FEG Environmental Scanning Electron Microscope (ESEM) at the Nanoscale Characterization Facility at the Krishna P. Singh Center for Nanotechnology at the University of Pennsylvania.">
+        <meta property="og:site_name" content="Beatrice the Bee">
+        <meta property="og:title" content="Beatrice the (Carpenter) Bee @ Quanta 600 FEG ESEM">
+        <meta property="og:description" content="Microscope images of a carpenter bee from the Quanta 600 Field Emission Gun (FEG) Environmental Scanning Electron Microscope (ESEM) at the Nanoscale Characterization Facility at the Krishna P. Singh Center for Nanotechnology at the University of Pennsylvania.">
         <meta property="og:url" content="https://www.seas.upenn.edu/~ericoc/bee/">
         <meta property="og:image" content="https://www.seas.upenn.edu/~ericoc/bee/static/images/icon.png">
         <link rel="shortcut icon" href="https://www.seas.upenn.edu/~ericoc/bee/static/images/favicon.ico">
         <link rel="apple-touch-icon" href="https://www.seas.upenn.edu/~ericoc/bee/static/images/icon.png">
-        <title>Beatrice the Bee 🐝 Quanta 600 FEG ESEM</title>
+        <title>Beatrice the Bee @ Quanta 600 FEG ESEM</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="static/bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="static/bootstrap-icons-1.12.1/bootstrap-icons.min.css">
@@ -25,8 +25,8 @@
             .icon-link-hover { --bs-icon-link-transform: translate3d(0, -.3rem, 0); }
             .img-bee { width: 25%; border-radius: 1rem; border-width: 0.025rem; border-style: solid; border-color: var(--bs-warning); }
             #portrait-img { width: 50%; border-radius: 1rem; border-width: 0.15rem; border-style: solid; border-color: var(--bs-warning); }
-            .logo { height: 2.5rem; }
-            summary:hover, .logo:hover { filter: opacity(50%); }
+            #logo { height: 2.5rem; }
+            summary:hover, #logo:hover { filter: opacity(50%); }
             summary { color: var(--bs-warning); }
             .anchor-link {
                 padding: 0 .175rem;
@@ -44,19 +44,20 @@
     </head>
     <body>
         <header class="container-fluid p-3 row">
-            <span class="col text-start" title="Beatrice the (Carpenter) Bee 🐝">
-                <img class="logo navbar-brand" src="static/images/icon.png" alt="Bee Logo" aria-hidden="true">
-                <a class="h2" href="https://www.seas.upenn.edu/~ericoc/bee/#title" id="title">
-                    Beatrice the Bee
+            <span class="col text-start" title="Beatrice the (Carpenter) Bee">
+                <img id="logo" class="navbar-brand" src="static/images/icon.png" alt="Bee Logo" aria-hidden="true">
+                <a class="h2" href="#title" id="title">
+                    <i>Beatrice</i> the Bee
                 </a>
-                🐝
             </span>
             <span class="col h4 text-end">
-                <a id="microscope" href="https://www.nano.upenn.edu/equipment/quanta-600-feg-esem/" target="_blank">Quanta 600 FEG ESEM</a>
+                <a id="microscope" href="https://www.nano.upenn.edu/equipment/quanta-600-feg-esem/" target="_blank">
+                    Quanta 600 <abbr title="Field Emission Gun - Environmental Scanning Electron Microscope">FEG ESEM</abbr>
+                </a>
             </span>
         </header>
         <main class="container-fluid border-top border-warning">
-            <nav class="m-1 p-1 navbar" id="nav">
+            <nav class="m-1 p-1 navbar navbar-expand navbar-expand-lg border-warning" id="nav">
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#head" title="Head">Head</a>
@@ -88,7 +89,7 @@
                     </a>
                 </p>
                 <p class="lead text-center p-1">
-                    <i>Beatrice</i> 🐝 was a female carpenter bee caught in North Philadelphia in May 2025.
+                    <i>Beatrice</i> was a female carpenter bee caught in North Philadelphia in May 2025.
                 </p>
                 <details class="border-3 border-top border-warning border-bottom m-1 p-1 bee-parts" open>
                     <summary class="p-1" id="head" title="Head (5)">
