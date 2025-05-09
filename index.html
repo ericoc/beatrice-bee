@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="static/bootstrap-icons-1.12.1/bootstrap-icons.min.css">
         <link href="static/lightbox2-2.11.5/dist/css/lightbox.css" rel="stylesheet">
         <style>
+            .navbar .navbar-toggler-icon { background-image: url('static/images/icon.png'); }
             body { background-color: #323639; color: #d6d6d7; }
             a, a:link, a:visited, .nav-item a, .nav-item a:link, .nav-item a:visited { color: #0096FF; text-decoration: none; }
             a:active, a:hover, .nav-item a:hover { text-decoration: underline; }
@@ -43,45 +44,50 @@
         </style>
     </head>
     <body>
-        <header class="container-fluid p-3 row">
-            <span class="col text-start" title="Beatrice the (Carpenter) Bee">
-                <img id="logo" class="navbar-brand" src="static/images/icon.png" alt="Bee Logo" aria-hidden="true">
-                <a class="h2" href="#title" id="title">
-                    <i>Beatrice</i> the Bee
-                </a>
-            </span>
-            <span class="col h4 text-end">
-                <a id="microscope" href="https://www.nano.upenn.edu/equipment/quanta-600-feg-esem/" target="_blank">
-                    Quanta 600 <abbr title="Field Emission Gun - Environmental Scanning Electron Microscope">FEG ESEM</abbr>
-                </a>
-            </span>
-        </header>
-        <main class="container-fluid border-top border-warning">
-            <nav class="m-1 p-1 navbar navbar-expand navbar-expand-lg border-warning" id="nav">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#head" title="Head">Head</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#forehead" title="Forehead">Forehead</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#antenna" title="Antenna">Antenna</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#eye" title="Eye">Eye</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#wing" title="Wing">Wing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#knees" title="Knees">Knees</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#stinger" title="Stinger">Stinger</a>
-                    </li>
-                </ul>
+        <header>
+            <nav class="navbar navbar-dark navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleBeatrice" aria-controls="toggleBeatrice" aria-expanded="false" aria-label="Toggle Navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="toggleBeatrice">
+                        <img id="logo" class="navbar-brand" src="static/images/icon.png" alt="Bee Logo" aria-hidden="true">
+                        <a class="h2" href="#title" id="title" title="Beatrice the (Carpenter) Bee">
+                            <i>Beatrice</i> the Bee
+                        </a>
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0 h4">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#head" title="Head">Head</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#forehead" title="Forehead">Forehead</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#antenna" title="Antenna">Antenna</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#eye" title="Eye">Eye</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#wing" title="Wing">Wing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#knees" title="Knees">Knees</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#stinger" title="Stinger">Stinger</a>
+                            </li>
+                        </ul>
+                        <span class="d-flex">
+                            <a class="h5" id="microscope" href="https://www.nano.upenn.edu/equipment/quanta-600-feg-esem/" target="_blank" title="Quanta 600 Field Emission Gun (FEG) Environmental Scanning Electron Microscope (ESEM)">
+                                Quanta 600 <abbr title="Field Emission Gun Environmental Scanning Electron Microscope">FEG ESEM</abbr>
+                            </a>
+                        </span>
+                    </div>
+                </div>
             </nav>
+        </header>
+        <main>
             <div id="pictures">
                 <p class="text-center p-3">
                     <a href="static/images/portrait/portrait_annotated.png" id="portrait" data-lightbox="portrait" title="Portrait">
@@ -91,7 +97,7 @@
                 <p class="lead text-center p-1">
                     <i>Beatrice</i> was a female carpenter bee caught in North Philadelphia in May 2025.
                 </p>
-                <details class="border-3 border-top border-warning border-bottom m-1 p-1 bee-parts" open>
+                <details class="bee-parts" open>
                     <summary class="p-1" id="head" title="Head (5)">
                         <span class="h3 text-start">
                             Head (5)
@@ -108,7 +114,7 @@
                         <a href="static/images/head/head_002_4K.png" id="head2" data-lightbox="head" target="_blank"><img alt="Head 002 (4K)" class="img-bee m-1" src="static/images/head/head_002_4K.png"></a>
                     </p>
                 </details>
-                <details class="border-bottom border-3 border-warning m-1 p-1 bee-parts" open>
+                <details class="bee-parts" open>
                     <summary class="p-1" id="forehead" title="Forehead (4)">
                         <span class="h3 text-start">
                             Forehead (4)
@@ -124,7 +130,7 @@
                         <a href="static/images/forehead/forehead_004.png" id="forehead4" data-lightbox="forehead" target="_blank"><img alt="Forehead 004" class="img-bee m-1" src="static/images/forehead/forehead_004.png"></a>
                     </p>
                 </details>
-                <details class="border-bottom border-3 border-warning m-1 p-1 bee-parts" open>
+                <details class="bee-parts" open>
                     <summary class="p-1" id="antenna" title="Antenna (3)">
                         <span class="h3 text-start">
                             Antenna (3)
@@ -139,7 +145,7 @@
                         <a href="static/images/antenna/antenna_003.png" id="antenna3" data-lightbox="antenna" target="_blank"><img alt="Antenna 003" class="img-bee m-1" src="static/images/antenna/antenna_003.png"></a>
                     </p>
                 </details>
-                <details class="border-bottom border-3 border-warning m-1 p-1 bee-parts" open>
+                <details class="bee-parts" open>
                     <summary class="p-1" id="eye" title="Eye (4)">
                         <span class="h3 text-start">
                             Eye (4)
@@ -155,7 +161,7 @@
                         <a href="static/images/eye/eye_004.png" id="eye4" data-lightbox="eye" target="_blank"><img alt="Eye 004" class="img-bee m-1" src="static/images/eye/eye_004.png"></a>
                     </p>
                 </details>
-                <details class="border-bottom border-3 border-warning m-1 p-1 bee-parts" open>
+                <details class="bee-parts" open>
                     <summary class="p-1" id="wing" title="Wing (4)">
                         <span class="h3 text-start">
                             Wing (4)
@@ -171,7 +177,7 @@
                         <a href="static/images/wing/wing_004.png" id="wing4" data-lightbox="wing" target="_blank"><img alt="Wing 004" class="img-bee m-1" src="static/images/wing/wing_004.png"></a>
                     </p>
                 </details>
-                <details class="border-bottom border-3 border-warning m-1 p-1 bee-parts" open>
+                <details class="bee-parts" open>
                     <summary class="p-1" id="knees" title="Knees (2)">
                         <span class="h3 text-start">
                             Knees (2)
@@ -209,11 +215,11 @@
                 <i class="bi bi-arrow-up-circle-fill"></i>
             </button>
         </main>
-        <footer class="container-fluid border-top border-warning p-3 row">
+        <footer class="container-fluid border-top border-warning row p-3">
             <span class="text-start col h5" id="thanks">
                 <i class="bi bi-balloon-heart text-danger"></i>
                 <span class="fw-bold">Thank you</span> to the <a class="fst-italic" href="https://www.nano.upenn.edu/resources/nanoscale-characterization/" target="_blank" title="Nanoscale Characterization Facility <https://www.nano.upenn.edu/resources/nanoscale-characterization/>">Nanoscale Characterization Facility</a>
-                (<span class="font-monospace">NCF</span>) at the <a class="fst-italic" href="https://www.nano.upenn.edu/" target="_blank" title="Singh Center for Nanotechnology <https://www.nano.upenn.edu/>">Singh Center for Nanotechnology</a>!
+                at the <a class="fst-italic" href="https://www.nano.upenn.edu/" target="_blank" title="Singh Center for Nanotechnology <https://www.nano.upenn.edu/>">Singh Center for Nanotechnology</a>!
             </span>
             <span class="text-end col" id="source" title="View Source: <https://github.com/upenn/beatrice-bee-ericoc>">
                 <a class="font-monospace icon-link icon-link-hover" href="https://github.com/upenn/beatrice-bee-ericoc" title="View source of this page <https://github.com/upenn/beatrice-bee-ericoc>">
